@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+.parent{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/bg-intro-desktop.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(0, 100%, 74%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.sec1{
+    color: white;
+}
+.sec1 h1{
+    margin: 50px 0px;
+    font-size: 60px;
+    line-height: 80px;
+}
+.sec2 {
+    display: flex;
+    flex-direction: column;
+}
+.sec2 button:first-child{
+   padding: 15px 70px;
+   background-color: hsl(248, 32%, 49%);
+   color: white;
+   border: 0;
+   outline: 0;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   font-size: 18px;
+   font-weight:600 ;
+   box-shadow: hsl(249, 10%, 46%)  0px 10px 10px ;
+   cursor: pointer;
+}
+.sec2 button:first-child span{
+   color: hsl(246, 25%, 77%);
+   font-size: 14px;
+}
+.sec2 .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: hsl(249, 10%, 46%)  0px 10px 10px ;
+}
+.form input{
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    color: hsl(249, 10%, 20%) ;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid hsl(249, 10%, 56%) ;
+    font-weight: 500;
+}
+.sec2 .form button{
+    width: 80%;
+    padding: 15px 70px;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight:600 ;
+    box-shadow: hsl(249, 10%, 36%)  0px 3px 5px ;
+    cursor: pointer;
+ }
+ .sec2 .form p{
+    text-align: center;
+    color: hsl(249, 10%, 26%) ;
+    font-size: 12px;
+    font-weight: 400px;
+    margin-top: 15px;
+ }
+ .sec2 .form span{
+    color: hsl(0, 100%, 54%);
+    font-size: 13px;
+    font-weight: 400px;
+    margin-top: 10px;
+    cursor: pointer;
+ }
+ .first{
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+ }
+ .second{
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+ }
+ .mail{
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+ }
+ .pass{
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+ }
+ .error-icon {
+    position: absolute;
+    top: 35%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+#p1,#p2,#p3,#p4{
+    color: hsl(0, 100%, 74%) ;
+    font-size: 14px;
+    text-align: end;
+    font-weight: 400px;
+    margin: 0 0;
+}
+
+
+@media (max-width:1300px) {
+    .parent{
+        width: 100%;
+        height: 100%;
+        background-image: url("./images/bg-intro-mobile.png");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: hsl(0, 100%, 74%) ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .sec1 h1{
+        margin: 50px 0px;
+        font-size: 40px;
+        line-height: 80px;
+    }
+    .sec1 p{
+
+        font-size: 18px;
+    }
+}
