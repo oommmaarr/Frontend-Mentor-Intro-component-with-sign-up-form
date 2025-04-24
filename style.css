@@ -175,4 +175,14 @@
 
         font-size: 18px;
     }
+    .sec2 .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 650px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: hsl(249, 10%, 46%)  0px 10px 10px ;
+    }
 }
